@@ -6,7 +6,9 @@ class HomePage extends React.Component {
     return (
       <div>
         {/* Complete your workshop in here*/}
-        <div>Welcome to FUBU React Workshop!</div>
+        <div>
+          <h1>Welcome to FUBU React Workshop!</h1>
+        </div>
       </div>
     )
   }
