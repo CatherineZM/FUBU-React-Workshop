@@ -1,3 +1,34 @@
-h1 {
+.Title {
     text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.flipCard{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipCard:hover{
+    transform: rotateY(180deg);
+}
+
+.flipCardFront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flipCardBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
